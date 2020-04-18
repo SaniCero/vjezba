@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project: Scene change</title>
+<style>
+#leafers {
+position: absolute;
+top: 210px;
+left: 378px;
+}
+</style>
+</head>
+<body>
+<img src="https://www.kasandbox.org/programming-images/landscapes/beach-with-palm-trees.png">
+
+<img="https://www.kasandbox.org/programming-images/avatars/leafers-seedling.png" id="leafers">
+
+<script src="https://ajax.googleleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$("#leafers").on("click", function(event) {
+/Do something!
+});
+var bigLeafer = function(event) {
+console.log(event);
+$("<img>")
+.attr("src", "https://wwww.kasandbox.org/programming-images/avatar/leafers-ultimate.png")
+.css("position", "absolute")
+.css("top", event.pageY + "px")
+.css("left" , event.pageX + "px")
+.addClass("bigLeafers")
+.appendTo("body");
+}
+</script>
+</body>
+</html>
